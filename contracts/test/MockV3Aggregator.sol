@@ -72,7 +72,12 @@ contract MockV3Aggregator is AggregatorV2V3Interface {
         );
     }
 
-    function latestRoundData()
+   
+}
+
+// MockOracle
+// Function signatures, event signatures, log topics
+ function latestRoundData()
         external
         view
         override
@@ -96,7 +101,3 @@ contract MockV3Aggregator is AggregatorV2V3Interface {
     function description() external view override returns (string memory) {
         return "v0.6/tests/MockV3Aggregator.sol";
     }
-}
-
-// MockOracle
-// Function signatures, event signatures, log topics
